@@ -1,0 +1,23 @@
+.textCenter {
+    text-align: center;
+}
+
+.centerHorizontally {
+    margin-left: auto;
+    margin-right: auto;
+    width: 49% !important;
+    height: 80px;
+}
+
+.homeButtonsContainer {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sendButton {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}

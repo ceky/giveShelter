@@ -1,0 +1,21 @@
+<ion-view view-title="Asociatii">
+  <ion-content>
+    <h3 class="textCenter">Lista centrelor de adoptii si adaposturilor de animale</h3>
+
+      <ul class="list">
+          <li ng-repeat="asociatie in asociatii" style="cursor: pointer" class="item">
+              <div class="item-icon-left">
+                  <i class="icon ion-person-stalker"></i>
+                  {{asociatie.title}}
+              </div>
+              <div class="item-icon-right" ng-click="onClickDeleteAsociatie(asociatie)">
+                  <i class="icon ion-ios-trash"></i>
+              </div>
+          </li>
+      </ul>
+
+  </ion-content>
+
+    <button class="button button-block button-balanced centerHorizontally ion-checkmark icon-left sendButton"
+            ng-click="showPopup()">Adauga asociatie</button>
+</ion-view>
