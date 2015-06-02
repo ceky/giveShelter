@@ -5,6 +5,34 @@ angular.module('starter.controllers', [])
 
 .controller('HomeController', function($scope) {
 
+    $scope.cameraPhotoUrl = '';
+
+    $scope.onClickTakePicture = function() {
+        navigator.camera.getPicture(function(imageURI) {
+            alert(imageURI);
+            $scope.cameraPhotoUrl = imageURI;
+            $scope.$apply();
+        }, function(err) {
+            alert("Error!");
+        });
+    };
+
+    $scope.onClickGetLocation = function() {
+        var onSuccess = function(position) {
+            alert('Latitude: '          + position.coords.latitude          + '\n' +
+                'Longitude: '         + position.coords.longitude         + '\n');
+        };
+        function onError(error) {
+            alert('code: '    + error.code    + '\n' +
+                'message: ' + error.message + '\n');
+        }
+
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    };
+
+    $scope.onClickSendInformation = function() {
+        window.open("geo:46.7689, 23.5832");
+    };
 })
 
 .controller('AsociatiiController', function($scope, $ionicPopup) {

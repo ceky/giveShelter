@@ -21,3 +21,11 @@
     left: 0;
     right: 0;
 }
+
+.cameraPhoto {
+    width: 40%;
+    height: 100px;
+    position: absolute;
+    top: 230px;
+    margin-left: 5%;
+}

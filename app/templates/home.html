@@ -7,10 +7,15 @@
         </div>
 
         <div class="homeButtonsContainer">
-            <button class="button button-positive centerHorizontally ion-camera icon-left">Fa o poza</button>
-            <button class="button button-positive centerHorizontally ion-earth icon-left">Salveaza locatia</button>
+            <button class="button button-positive centerHorizontally ion-camera icon-left"
+                    ng-click="onClickTakePicture()">Fa o poza</button>
+            <button class="button button-positive centerHorizontally ion-earth icon-left"
+                    ng-click="onClickGetLocation()">Salveaza locatia</button>
         </div>
     </ion-content>
 
-    <button class="button button-block button-balanced centerHorizontally ion-checkmark icon-left sendButton">Trimite informatia</button>
+    <img ng-src="{{cameraPhotoUrl}}" class="cameraPhoto" />
+
+    <button class="button button-block button-balanced centerHorizontally ion-checkmark icon-left sendButton"
+            ng-click="onClickSendInformation()">Trimite informatia</button>
 </ion-view>
