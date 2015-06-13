@@ -1,4 +1,25 @@
-<ion-view view-title="Home">
+    <ion-slide-box>
+        <ion-slide>
+            <div style="text-align:center; margin-top: 100px;">
+                <button class="button button-positive centerHorizontally ion-camera icon-left"
+                        ng-click="onClickTakePicture()">Fa o poza</button>
+                <img ng-src="{{cameraPhotoUrl}}" class="cameraPhoto" />
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div style="text-align:center; margin-top: 100px;">
+                <button class="button button-positive centerHorizontally ion-earth icon-left"
+                        ng-click="onClickGetLocation()">Salveaza locatia</button>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div style="text-align:center; margin-top: 100px;">
+                <button class="button button-block button-balanced centerHorizontally ion-checkmark icon-left"
+                        ng-click="onClickSendInformation()">Trimite informatia</button>
+            </div>
+        </ion-slide>
+    </ion-slide-box>
+    <!--
     <ion-content>
         <div class="card">
             <div class="item item-text-wrap">
@@ -14,8 +35,7 @@
         </div>
     </ion-content>
 
-    <img ng-src="{{cameraPhotoUrl}}" class="cameraPhoto" />
+
 
     <button class="button button-block button-balanced centerHorizontally ion-checkmark icon-left sendButton"
-            ng-click="onClickSendInformation()">Trimite informatia</button>
-</ion-view>
+            ng-click="onClickSendInformation()">Trimite informatia</button>-->

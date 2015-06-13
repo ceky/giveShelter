@@ -23,9 +23,11 @@
 }
 
 .cameraPhoto {
-    width: 40%;
+    width: 80%;
     height: 100px;
     position: absolute;
     top: 230px;
-    margin-left: 5%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
